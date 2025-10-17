@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aura Deco • Cuadros y diseño</title>
+  <meta name="description" content="Aura Deco: cuadros modernos y personalizados para interiores. Envíos en CABA y GBA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Favicon -->
+<link rel="icon" href="auradeco.png" type="image/png">
+<link rel="apple-touch-icon" href="auradeco.png">
+<meta name="theme-color" content="#8b5e3c">
+
+<link rel="canonical" href="https://auradecoshop.com.ar/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aura Deco">
+<meta property="og:title" content="Aura Deco • Cuadros y diseño">
+<meta property="og:description" content="Cuadros modernos y personalizados para interiores. Envíos en CABA y GBA.">
+<meta property="og:image" content="https://auradecoshop.com.ar/auradeco.png">
+<meta name="twitter:card" content="summary_large_image">
+
+</head>
+<body>
+  <!-- Botón WhatsApp flotante -->
+  <a class="wapp" id="wappLink" target="_blank" rel="noopener">WhatsApp</a>
+
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <img src="auradeco.png" alt="Aura Deco" class="logo-img" />
+        <b id="brandName">Aura Deco</b>
+      </div>
+
+      <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+      <nav class="menu" id="menu">
+        <a href="#catalogo" class="btn">Catálogo</a>
+        <a href="#como" class="btn">Cómo comprar</a>
+        <a href="#contacto" class="btn">Contacto</a>
+        <button class="btn ghost cartBtn" id="openCart" aria-label="Abrir carrito">
+          🛒 <span id="cartCount">0</span>
+        </button>
+        <a href="#catalogo" class="btn primary">Ver modelos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero minvh">
+      <div class="hero-grid">
+        <div>
+          <span class="tag">🎯 Hechos a medida • Enmarcados premium</span>
+          <h1>Cuadros que elevan tus espacios</h1>
+          <p class="lead">Diseños originales y curaduría de autor. Elegí tamaño, marco y terminación. Envíos en CABA y GBA.</p>
+          <div class="cta">
+            <a href="#catalogo" class="btn primary">Explorar catálogo</a>
+            <a href="#contacto" class="btn ghost">Pedir presupuesto</a>
+          </div>
+        </div>
+        <div class="frame-wall">
+          <div class="frames">
+            <div class="frame med"><div class="art"></div></div>
+            <div class="frame small"><div class="art"></div></div>
+            <div class="frame small"><div class="art"></div></div>
+            <div class="frame wide"><div class="art"></div></div>
+            <div class="frame med"><div class="art"></div></div>
+            <div class="frame small"><div class="art"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section id="catalogo">
+      <h2>Catálogo</h2>
+      <p class="sub">Elegí por estilo o ambiente. Hacemos packs y composiciones.</p>
+
+      <div class="filters" id="filters"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!-- CÓMO COMPRAR -->
+    <section id="como">
+      <h2>Cómo comprar</h2>
+      <div class="two-col">
+        <div class="card soft">
+          <h3>1) Elegí diseño y tamaño</h3>
+          <p>Tenemos tamaños estándar (30×40, 40×50, 50×70, 60×90) y medidas a pedido. Acabado en papel artístico mate o lámina texturada.</p>
+        </div>
+        <div class="card soft">
+          <h3>2) Marco y terminación</h3>
+          <p>Marcos de madera natural: <em>wengué</em>, <em>roble</em>, <em>negro</em> o <em>blanco</em>. Opción con vidrio o acrílico anti-reflejo.</p>
+        </div>
+        <div class="card soft">
+          <h3>3) Coordinamos envío/retito</h3>
+          <p>Envíos en 48–72 h para stock. Personalizados: 5–7 días. Retiro sin cargo por Lanús.</p>
+        </div>
+        <div class="card soft">
+          <h3>Pagos</h3>
+          <p>Transferencia, efectivo y links de pago. Descuentos por pack de 3+ cuadros.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="two-col">
+        <div class="card soft">
+          <p>¿Sos decorador/a o tenés local de muebles? Hacemos listas mayoristas y curaduría por ambiente.</p>
+          <p>Mandanos tu idea por WhatsApp y armamos un presupuesto en minutos.</p>
+          <a class="btn primary" id="wappCTA">Escribir por WhatsApp</a>
+        </div>
+        <form class="card soft" id="form">
+          <label>Nombre<br>
+            <input name="nombre" required placeholder="Tu nombre">
+          </label>
+          <label>Mensaje<br>
+            <textarea name="mensaje" rows="4" required placeholder="Contame qué buscás…"></textarea>
+          </label>
+          <button class="btn primary" type="submit">Enviar</button>
+          <small class="hint">Este formulario abre WhatsApp con tu mensaje.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <div class="brand">
+          <img src="auradeco.png" alt="Aura Deco" class="logo-img" />
+          <b>Aura Deco</b>
+        </div>
+        <small>Hecho con ❤️ en Lanús • © <span id="year"></span></small>
+      </div>
+      <div>
+        <b>Links</b>
+        <ul class="links">
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#como">Cómo comprar</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <b>Mayoristas</b>
+        <p class="muted">Escribinos para lista especial y exhibidores.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DE PRODUCTO -->
+  <dialog id="productModal">
+    <div class="modal-body">
+      <img id="modalImg" class="modal-img" alt="Cuadro">
+      <div class="modal-content">
+        <h3 id="modalTitle">Título</h3>
+        <p id="modalDesc" class="muted">Descripción del diseño.</p>
+        <div class="meta">
+          <div>
+            <label for="modalSize">Tamaño</label><br>
+            <select id="modalSize"></select>
+          </div>
+          <div>
+            <label for="modalQty">Cantidad</label><br>
+            <input type="number" id="modalQty" min="1" value="1">
+          </div>
+          <div class="price" id="modalPrice">$0</div>
+        </div>
+        <div class="modal-actions">
+          <button class="btn primary" id="modalAddCart">Agregar al carrito</button>
+          <a class="btn ghost" id="modalBuy">Pedir por WhatsApp</a>
+          <button class="btn ghost" id="modalClose">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- CARRITO -->
+  <dialog id="cartDrawer">
+    <div class="cart-body">
+      <div class="cart-head">
+        <h3>Tu carrito</h3>
+        <button class="btn ghost" id="closeCart">Cerrar</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-foot">
+        <div class="cart-total">
+          <span>Subtotal</span>
+          <b id="cartSubtotal">$0</b>
+        </div>
+        <div class="cart-actions">
+          <button class="btn ghost" id="emptyCart">Vaciar</button>
+          <a class="btn primary" id="cartCheckout">Armar pedido por WhatsApp</a>
+        </div>
+        <small class="hint">El pedido se enviará por WhatsApp con el detalle de tus productos.</small>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
